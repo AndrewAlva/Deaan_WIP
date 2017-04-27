@@ -6,6 +6,10 @@
 	$dbGreen: #b4ccbf;
 	$dbWhite: #ffffff;
 	$dbBlack: #1d1d1b;
+
+	*{
+		font-family: 'Montserrat', sans-serif;
+	}
 	
 
 	#mbrtWrap{
@@ -46,7 +50,7 @@
 					width: 100%;
 					height: 105px;
 					line-height: 35px;
-					letter-spacing: 16px;
+					letter-spacing: 14px;
 					font-size: 35px;
 				}
 
