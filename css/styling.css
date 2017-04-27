@@ -36,17 +36,23 @@
         margin-bottom: 50px;
         width: 100%;
         height: 105px;
-        line-height: 35px; }
+        line-height: 35px;
+        letter-spacing: 16px;
+        font-size: 35px; }
       #mbrtWrap .leftWrap .textWrap h2 {
         color: #1d1d1b;
         margin: 0;
         width: 100%;
         height: 38px;
-        line-height: 19px; }
+        line-height: 19px;
+        letter-spacing: 5px;
+        font-size: 17px; }
   #mbrtWrap .rightWrap {
     background-color: #ffffff; }
     #mbrtWrap .rightWrap div {
       position: absolute; }
+      #mbrtWrap .rightWrap div img {
+        width: 100%; }
     #mbrtWrap .rightWrap .dbLeaf {
       width: 244px;
       height: 233px; }
@@ -64,7 +70,23 @@
       bottom: 0;
       left: 0;
       right: 0; }
-      #mbrtWrap .rightWrap .dbLogo img {
-        width: 100%; }
+
+@media screen and (max-width: 1024px) {
+  #mbrtWrap .leftWrap .textWrap {
+    width: 333px;
+    height: 200px; }
+    #mbrtWrap .leftWrap .textWrap h1 {
+      height: 94px;
+      margin-bottom: 72px;
+      font-size: 30px; }
+    #mbrtWrap .leftWrap .textWrap h2 {
+      height: 30px;
+      font-size: 16px; }
+  #mbrtWrap .rightWrap .dbLeaf {
+    width: 195px;
+    height: 186px; }
+  #mbrtWrap .rightWrap .dbLogo {
+    width: 155px;
+    height: 155px; } }
 
 /*# sourceMappingURL=styling.css.map */
