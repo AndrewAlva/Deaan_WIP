@@ -42,6 +42,12 @@
 
 		.leftWrap{
 			background-color: $dbGreen;
+			@include transitions(all, 1.4s, cubic-bezier(.3,.01,.15,.99));
+			-webkit-transform-origin: left;
+			   -moz-transform-origin: left;
+				-ms-transform-origin: left;
+				 -o-transform-origin: left;
+					transform-origin: left;
 
 			.textWrap{
 				position: absolute;
@@ -53,6 +59,10 @@
 
 				.upCase{
 					text-transform: uppercase;
+
+					span{
+						@include transitions(all, 0.8s, ease-out);
+					}
 				}
 
 				.title{
@@ -77,9 +87,14 @@
 					font-size: 17px;
 					font-weight: 700;
 
+					span{
+						@include transitions(all, 0.8s, ease-out);
+					}
+
 					a{
 						text-decoration: none;
 						color: $dbBlack;
+						@include transitions(all, 0.8s, ease-out);
 					}
 				}
 			}
@@ -100,6 +115,7 @@
 			.dbLeaf{
 				width: 244px;
 				height: 233px;
+				@include transitions(all, 0.8s, ease-out);
 			}
 
 			.topLeaf{
@@ -118,8 +134,26 @@
 				margin: auto;
 				top: 13px; bottom: 0;
 				left: 0; right: 0;
+				@include transitions(all, 0.8s, ease-out);
 			}
 		}
+	}
+
+	// Helper Animation class
+	.enterBg{
+		-webkit-transform: scaleX(0);
+		   -moz-transform: scaleX(0);
+		    -ms-transform: scaleX(0);
+		     -o-transform: scaleX(0);
+		        transform: scaleX(0);
+	}
+	.animateObj{
+		@include opacity(0);
+		-webkit-transform: translateY(7px);
+		   -moz-transform: translateY(7px);
+		    -ms-transform: translateY(7px);
+		     -o-transform: translateY(7px);
+		        transform: translateY(7px);
 	}
 
 

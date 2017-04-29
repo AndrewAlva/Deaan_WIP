@@ -34,7 +34,17 @@
     height: 100%;
     overflow: hidden; }
   #mbrtWrap .leftWrap {
-    background-color: #b4ccbf; }
+    background-color: #b4ccbf;
+    -webkit-transition: all 1.4s cubic-bezier(0.3, 0.01, 0.15, 0.99);
+    -moz-transition: all 1.4s cubic-bezier(0.3, 0.01, 0.15, 0.99);
+    -ms-transition: all 1.4s cubic-bezier(0.3, 0.01, 0.15, 0.99);
+    -o-transition: all 1.4s cubic-bezier(0.3, 0.01, 0.15, 0.99);
+    transition: all 1.4s cubic-bezier(0.3, 0.01, 0.15, 0.99);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+    transform-origin: left; }
     #mbrtWrap .leftWrap .textWrap {
       position: absolute;
       width: 364px;
@@ -45,6 +55,12 @@
       left: 14.82%; }
       #mbrtWrap .leftWrap .textWrap .upCase {
         text-transform: uppercase; }
+        #mbrtWrap .leftWrap .textWrap .upCase span {
+          -webkit-transition: all 0.8s ease-out;
+          -moz-transition: all 0.8s ease-out;
+          -ms-transition: all 0.8s ease-out;
+          -o-transition: all 0.8s ease-out;
+          transition: all 0.8s ease-out; }
       #mbrtWrap .leftWrap .textWrap .title {
         color: #ffffff;
         margin-top: 0;
@@ -64,9 +80,20 @@
         letter-spacing: 5px;
         font-size: 17px;
         font-weight: 700; }
+        #mbrtWrap .leftWrap .textWrap .subtitle span {
+          -webkit-transition: all 0.8s ease-out;
+          -moz-transition: all 0.8s ease-out;
+          -ms-transition: all 0.8s ease-out;
+          -o-transition: all 0.8s ease-out;
+          transition: all 0.8s ease-out; }
         #mbrtWrap .leftWrap .textWrap .subtitle a {
           text-decoration: none;
-          color: #1d1d1b; }
+          color: #1d1d1b;
+          -webkit-transition: all 0.8s ease-out;
+          -moz-transition: all 0.8s ease-out;
+          -ms-transition: all 0.8s ease-out;
+          -o-transition: all 0.8s ease-out;
+          transition: all 0.8s ease-out; }
   #mbrtWrap .rightWrap {
     background-color: #ffffff; }
     #mbrtWrap .rightWrap div {
@@ -75,7 +102,12 @@
         width: 100%; }
     #mbrtWrap .rightWrap .dbLeaf {
       width: 244px;
-      height: 233px; }
+      height: 233px;
+      -webkit-transition: all 0.8s ease-out;
+      -moz-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
     #mbrtWrap .rightWrap .topLeaf {
       top: 0;
       right: 0; }
@@ -90,7 +122,30 @@
       top: 13px;
       bottom: 0;
       left: 0;
-      right: 0; }
+      right: 0;
+      -webkit-transition: all 0.8s ease-out;
+      -moz-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+      -o-transition: all 0.8s ease-out;
+      transition: all 0.8s ease-out; }
+
+.enterBg {
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0); }
+
+.animateObj {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+  -webkit-transform: translateY(7px);
+  -moz-transform: translateY(7px);
+  -ms-transform: translateY(7px);
+  -o-transform: translateY(7px);
+  transform: translateY(7px); }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   #mbrtWrap .leftWrap .textWrap {
