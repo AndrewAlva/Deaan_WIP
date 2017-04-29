@@ -1,6 +1,19 @@
 * {
   font-family: 'Montserrat', sans-serif; }
 
+#tester {
+  position: absolute;
+  z-index: 1000;
+  width: 8px;
+  height: 8px;
+  border: 1px solid red;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 305px;
+  left: 37px;
+  display: none; }
+
 #mbrtWrap {
   position: absolute;
   width: 100%;
@@ -25,31 +38,35 @@
     #mbrtWrap .leftWrap .textWrap {
       position: absolute;
       width: 364px;
-      height: 192px;
-      border: 1px solid white;
+      height: 214px;
       margin: auto;
       top: 0;
       bottom: 12px;
       left: 14.82%; }
       #mbrtWrap .leftWrap .textWrap .upCase {
         text-transform: uppercase; }
-      #mbrtWrap .leftWrap .textWrap h1 {
+      #mbrtWrap .leftWrap .textWrap .title {
         color: #ffffff;
         margin-top: 0;
         margin-bottom: 50px;
         width: 100%;
-        height: 105px;
-        line-height: 35px;
-        letter-spacing: 14px;
-        font-size: 35px; }
-      #mbrtWrap .leftWrap .textWrap h2 {
+        height: 122px;
+        line-height: 43px;
+        letter-spacing: 12px;
+        font-size: 35px;
+        font-weight: 500; }
+      #mbrtWrap .leftWrap .textWrap .subtitle {
         color: #1d1d1b;
         margin: 0;
         width: 100%;
-        height: 38px;
-        line-height: 19px;
+        height: 42px;
+        line-height: 21px;
         letter-spacing: 5px;
-        font-size: 17px; }
+        font-size: 17px;
+        font-weight: 700; }
+        #mbrtWrap .leftWrap .textWrap .subtitle a {
+          text-decoration: none;
+          color: #1d1d1b; }
   #mbrtWrap .rightWrap {
     background-color: #ffffff; }
     #mbrtWrap .rightWrap div {
@@ -66,6 +83,7 @@
       bottom: 0;
       left: 0; }
     #mbrtWrap .rightWrap .dbLogo {
+      z-index: 1000;
       width: 190px;
       height: 190px;
       margin: auto;
@@ -78,13 +96,17 @@
   #mbrtWrap .leftWrap .textWrap {
     width: 333px;
     height: 200px; }
-    #mbrtWrap .leftWrap .textWrap h1 {
-      height: 94px;
-      margin-bottom: 72px;
-      font-size: 30px; }
-    #mbrtWrap .leftWrap .textWrap h2 {
+    #mbrtWrap .leftWrap .textWrap .title {
+      height: 95px;
+      margin-bottom: 66px;
+      font-size: 28px;
+      letter-spacing: 14.5px;
+      line-height: 34px; }
+    #mbrtWrap .leftWrap .textWrap .subtitle {
       height: 30px;
-      font-size: 16px; }
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 3.5px; }
   #mbrtWrap .rightWrap .dbLeaf {
     width: 195px;
     height: 186px; }
@@ -94,6 +116,46 @@
 @media only screen and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   #mbrtWrap .innerWrap {
     width: 100%;
-    height: 50%; } }
+    height: 50%;
+    position: absolute; }
+  #mbrtWrap .leftWrap {
+    bottom: 0; }
+    #mbrtWrap .leftWrap .textWrap {
+      left: 9.76%; }
+  #mbrtWrap .rightWrap .dbLeaf {
+    width: 195px;
+    height: 186px; }
+  #mbrtWrap .rightWrap .dbLogo {
+    width: 180px;
+    height: 180px;
+    top: 21px; } }
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  #mbrtWrap .leftWrap .textWrap {
+    width: 181px;
+    height: 111px;
+    left: 10.93%; }
+    #mbrtWrap .leftWrap .textWrap .title {
+      height: 59px;
+      line-height: 21px;
+      letter-spacing: 7.3px;
+      font-size: 16px;
+      margin-bottom: 27px; }
+    #mbrtWrap .leftWrap .textWrap .subtitle {
+      height: 19px;
+      line-height: 12px;
+      letter-spacing: 1px;
+      font-size: 10px; }
+  #mbrtWrap .rightWrap .dbLogo {
+    width: 85px;
+    height: 85px; }
+  #mbrtWrap .rightWrap .dbLeaf {
+    width: 92px;
+    height: 87px; } }
+@media only screen and (max-width: 767px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #mbrtWrap {
+    min-width: 420px; } }
+@media only screen and (max-width: 767px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  #mbrtWrap {
+    min-width: 270px; } }
 
 /*# sourceMappingURL=styling.css.map */
